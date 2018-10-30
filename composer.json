@@ -1,0 +1,31 @@
+{
+    "name": "root/install_word-press",
+    "authors": [
+        {
+            "name": "spiraldev",
+            "email": "spiraldev13@gmail.com"
+        }
+    ],
+    "repositories":[
+       {
+           "type":"composer",
+           "url":"https://wpackagist.org"
+       }
+   ],
+   "require": {
+       "johnpbloch/wordpress": "4.*",
+       "wpackagist-theme/twentyseventeen": "*",
+       "wpackagist-plugin/contact-form-7": "*",
+       "wpackagist-plugin/what-the-file": "*",
+       "wpackagist-plugin/simply-show-hooks": "*",
+       "wpackagist-plugin/cookie-notice": "*"
+
+     },
+     "extra": {
+       "wordpress-install-dir":"wp",
+       "installer-paths": {
+         "content/plugins/{$name}/": ["type:wordpress-plugin"],
+         "content/themes/{$name}/": ["type:wordpress-theme"]
+       }
+     }
+   }

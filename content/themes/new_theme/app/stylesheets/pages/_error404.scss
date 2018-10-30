@@ -1,0 +1,40 @@
+.wrap_error{
+  background-color: lightgrey;
+  height: 100%;
+  // margin-top: -2em;
+
+}
+
+
+.text_error{
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 5em;
+  // margin-top: 2em;
+
+}
+
+.number_error {
+  font-weight: 800;
+  font-size: 3em;
+  @include breakpoint(laptop){
+    font-size: 6em;
+  }
+}
+
+.link_error{
+  color: blue;
+}
+.link_error:hover{
+  text-decoration: none;
+  color: purple;
+}
+
+.img_error img{
+  width: 20%;
+  margin: 5em auto;
+  display: block;
+  margin-bottom: 2em;
+
+}

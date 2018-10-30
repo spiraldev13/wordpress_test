@@ -1,0 +1,22 @@
+.DS_Store
+notes/
+/vendor/
+wp/
+
+content/themes/twentyseventeen/
+content/languages/
+content/uploads
+content/upgrade
+content/debug.log
+content/cache/
+node_modules/
+public/
+
+wp-config.php
+
+
+# Je versionne tous les plugins sauf les perso
+
+content/plugins/*
+
+!content/plugins/plugin-theme-ecrantotal
