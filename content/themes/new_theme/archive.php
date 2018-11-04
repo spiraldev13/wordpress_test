@@ -8,6 +8,14 @@ Template Name: Archives
 
 <h1 style="text-transform: uppercase;">je suis la page archive.php</h1>
 
+<?php $tab=[
+        'title_li'        => '',
+        'style'           => 'none',
+        'echo'            => false,
+        'show_option_all' => 'all'
+];  ?>
+
+<?php echo str_replace("<br />", "", wp_list_categories($tab) ); ?>
 
 <?php if (have_posts()): while(have_posts()): the_post(); ?>
 
@@ -47,7 +55,6 @@ Template Name: Archives
       </figcaption>
     </figure>
   </a>
-
   <?php
   endwhile;
   endif;
